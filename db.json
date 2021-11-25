@@ -1,0 +1,44 @@
+{
+  "newObejects": [
+    {
+      "address": "NDLBLBFBKFBKJBKBASBWR",
+      "degreeprogram": "Financial Services",
+      "dob": "2021-09-21",
+      "email": "example@gmail.com",
+      "fathername": "mine",
+      "fisrtname": "my",
+      "highestschooling": "12th",
+      "id": "function getTime() {\n    [native code]\n}",
+      "lastname": "hello",
+      "phnnumber": "9011313434"
+    },
+    [
+      {
+        "fisrtname": "a",
+        "lastname": "b",
+        "fathername": "c",
+        "dob": "2021-09-15",
+        "phnnumber": "453636",
+        "email": "",
+        "address": "",
+        "highestschooling": "10th",
+        "degreeprogram": "Financial Services",
+        "id": "function getTime() {\n    [native code]\n}"
+      }
+    ],
+    [
+      {
+        "fisrtname": "a",
+        "lastname": "b",
+        "fathername": "c",
+        "dob": "2021-09-14",
+        "phnnumber": "2346",
+        "email": "example@gmail.com",
+        "address": "fsbs",
+        "highestschooling": "11th",
+        "degreeprogram": "Electronics & Communication Engineering",
+        "id": "function getTime() {\n    [native code]\n}"
+      }
+    ]
+  ]
+}
