@@ -40,7 +40,7 @@ export function Home() {
             </div>
             <div className="hmain">
                 <div className="announce" id="announcement">
-                    <marquee direction="left" scrollamount="10">Announcement Announcement Announcement Announcement Announcement Announcement Announcement Announcement</marquee>
+                    <marquee direction="left" scrollamount="5">Announcement Announcement Announcement Announcement Announcement Announcement Announcement Announcement</marquee>
                 </div>
 
                 <div className="note">
