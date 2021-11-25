@@ -373,6 +373,7 @@ video{
 }
 
 .bar{
+    margin: 10px 0 0 20px;
     padding: 25px 5px 10px 5px;
 }
 .Ranking{
