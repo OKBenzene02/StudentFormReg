@@ -99,7 +99,7 @@ export function Main() {
             </label>
             <hr />
             <label for="email">
-                EMAIL-ID: <input type="email" value={userinputs.email} placeholder="someone@example.come" id="email" name="email" onChange={onUserInteract}/>
+                EMAIL-ID: <input type="email" value={userinputs.email} placeholder="someone@example.com" id="email" name="email" onChange={onUserInteract}/>
             </label>
             <hr />
             <label for="address">

@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+
 .Main_page, form{
     scroll-behavior: smooth;
 }
@@ -24,7 +30,7 @@ body{
 }
 
 .backtohome:hover{
-    color: rgb(255, 105, 105);
+    color: rgb(223, 52, 52);
 }
 
 .line{
@@ -381,5 +387,85 @@ video{
     justify-content: center;
     padding: 20px;
 }
-
-
+.contact{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    border-radius: 5px;
+  background-color: #c4c4c4;
+  padding: 20px;
+  width: 800px;
+  margin: 80px auto;
+}
+.ctext{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: rgb(43, 212, 195);
+    /* padding: 20px; */
+    margin: -40px;
+}
+.contactLabels{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+.contact input[type=text]{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+  }
+.contact input[type=email]{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+}
+  .feedback {
+      height: 150px;
+      width: 450px;
+      min-width: 450px;
+      min-height: 150px;
+      max-width: 450px;
+      max-height: 150px;
+      margin: 20px 20px;
+     border-radius: 4px;
+     box-sizing: border-box;
+     font-family: 'Open Sans', sans-serif;
+     padding: 8px;
+  }
+  
+  .cbacktohome{
+      font-size: 18px;
+      text-align: left;
+      margin: 5px 50px;
+      padding: 10px 10px;
+  }
+  .cbacktohome:hover{
+      color: rgb(223, 52, 52);
+  }
+.cfooter ul li{
+    list-style: none;
+    display: inline-block;
+    justify-content: center;
+    margin: 2px 20px;
+    /* font-size: 20px; */
+}
+.cfooter{
+    /* padding: 10px; */
+    text-align: center;
+}
+.cunilogo{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
