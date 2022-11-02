@@ -25,129 +25,316 @@ body{
     margin: 0;
     padding: 13px 0 0 0;
 }
-.student_text{
-    padding: 1.5px;
-}
 
-.backtohome:hover{
-    color: rgb(223, 52, 52);
-}
-
-.line{
-    background-color: rgb(160, 160, 255);
-    height: 3px;
-}
-.main{
-    font-size: 24px;
-    display: grid;
-}
-label{
-    margin: 10px;
-    padding: 7px;
-    float: left;
-}
-input[type=text] {
-    border-radius: 5px;
-    width: 70%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    font-size: 1.25rem;
-    color: rgb(155, 155, 155);
-    border: none;
-    border-bottom: 2px solid rgb(111, 111, 111);
-    background-color: lavender;
-    float: right;
-  }
-input[type=email]{
-    border-radius: 5px;
-    width: 70%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    font-size: 1.25rem;
-    color: rgb(155, 155, 155);
-    border-bottom: 2px solid rgb(111, 111, 111);
-    background-color: lavender;
-    float: right;
-}
-input[type=date]{
-    border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-    width: 20%;
-    height: 50px;
-    font-size: 1.25rem;
-    color: rgb(111, 111, 111);
-    margin: 10px 50% 5px auto;
-    float: right;
-    text-align: center;
-}
-select{
-    text-align: center;
-    border-radius: 5px;
-    margin: 10px;
-    width: 30%;
-    height: 35px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    color: rgb(111, 111, 111);
-}
-
-hr{
-    visibility: hidden;
-}
-.centerbutton{
-    display: grid;
+.hmain{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 1.25rem;
+    padding: 1.25rem;
 }
 
-.register {
-    margin: 20px;
-    padding: 20px;
-    position: relative;
-    background-color: #04AA6D;
-    border: none;
-    border-radius: 5px;
-    font-size: 28px;
-    color: #FFFFFF;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    text-decoration: none;
+.announce{
+    margin: 1.5rem;
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+    animation: changeColor 0.8s ease-in-out 0.8s infinite alternate;
+
+    width: 80%;
     overflow: hidden;
-    cursor: pointer;
+}
+
+.announce div{
+    animation: slideLeft 10s infinite;
+}
+
+@keyframes changeColor {
+    from{
+        color: red;
+    }
+    to{
+        color: yellow;
+    }   
+}
+
+@keyframes slideLeft {
+    from {
+        margin-left: 100%;
+        width: 300%; 
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+}
+
+.note{
+    height: 3rem;
+    width: 25rem;
+    background-color: rgb(223, 118, 139);
+    border: 2px solid yellow;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.awards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.video1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* position: absolute; */
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.video1 h1{
+    text-align: center;
+    color: blueviolet;
+    padding: 0 0 20px 0;
+}
+
+.video1 .videoDiv{
+    margin: .65rem;
+    padding: .65rem;
+}
+
+.video2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+    padding: 2rem;
+}
+
+.video2 h1{
+    color: blueviolet;
+    padding: 0 0 2rem 0;
+}
+
+video{
+      width: 600px;
+      border-radius: 5px;
+      /* border: 3px solid plum; */
+      /* border: 3px solid rgb(77, 75, 77); */
+      box-shadow: -5px 4px 17px 0px rgb(66 65 65);
   }
-  
-  .register:after {
-    content: "";
-    background: #90EE90;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px!important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
-  }
-  
-  .register:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-  }
+
+.Rimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.Rimg .rimgtext{
+    color: blueviolet;
+    padding: 0 0 1rem 0;
+}
+
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    flex-direction: row;
+    gap: 8rem;
+}
+.cards .card{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 35rem;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 3px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+.cards .dean, .director{
+    height: 20rem;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.card:hover{
+    box-shadow: 0 10px 18px 0 rgba(0,0,0,0.2);
+}
+
+.cards .card .cardinfo{
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.collegeImages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:5rem;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.collegeImages .clgimg{
+    background-color: rgb(243, 243, 255);
+    border-radius: 8px;
+    box-shadow: -5px 2px 20px 0px rgb(66 65 65);
+}
+
+.Cimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.Cimg .cimgtext{
+    color: blueviolet;
+    padding: 0 0 2rem 0;
+}
+
+.about_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem;
+    width: 70rem;
+    height: max-content;
+    background-color: rgb(227, 224, 224);
+    border-radius: 5px;
+}
+
+.about_main .para p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about_container .about_main:hover{
+    background-color: rgb(218, 216, 216);
+}
+
+.registerPage-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.registerPage-container .main{
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    width: 40rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: .65rem;
+}
+
+.registerPage-container .main .main-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.registerPage-container .main .main-container label{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: .1rem;
+} 
+
+.registerPage-container .main .main-container input, select{
+    float: right;
+    font-size: .85rem;
+    font-weight: 600;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(111, 111, 111);
+    height: 2rem;
+    width: 15rem;
+    padding: .5rem;
+    margin-left: 1rem;
+} 
+
+.registerPage-container .main .main-container select{
+    text-align: center;
+    padding: .5rem;
+    height: 2.5rem;
+    width: 15rem;
+    color: rgb(84, 84, 84);
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.registerButton-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    transform: translateY(-50%);
+} 
+.registerButton-main .registerButton .register{
+    width: 6.8rem;
+    height: 3.25rem;
+    border-radius: .55rem;
+    background-color: #fff;
+    border-color: blueviolet;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+    font-size: 1.2em;
+}
+
+.registerButton-main .registerButton .register:hover{
+    color: #fff;
+    background-color: blueviolet;
+}
 
   .container{
       /* background-color: rgba(44, 44, 44, 0.823); */
+      display: flex;
+      flex-direction: row;
       background-color: #fff;
       color: whitesmoke;
-      height: 160px;
+      height: 6rem;
       box-shadow: 0px 1px 4px 4px rgb(133, 130, 130);
     }
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
     
 .navigation ul li{
     /* display: inline-block; */
@@ -156,6 +343,7 @@ hr{
     font-size: 18px;
     float: left;
 }
+
 a{
     text-decoration: none;
     color: rgb(36, 34, 34);   
@@ -218,60 +406,12 @@ a{
       color: black;
       font-family: 'Montserrat', sans-serif;
   }
-
-.announce{
-    display: grid;
-    justify-content: center;
-    margin: 20px ;
-    font-size: 23px;
-    font-family: 'Montserrat', sans-serif;
-    animation: changeColor 0.8s ease-in-out 0.8s infinite alternate;
-}
-@keyframes changeColor {
-    from{
-        color: red;
-    }
-    to{
-        color: yellow;
-    }
-    
-}
-
-
-.video{
-    display: flex;
-    justify-content: center;
-}
-
-video{
-      width: 600px;
-      margin: 10px auto 15px auto;
-      border-radius: 5px;
-      /* border: 3px solid plum; */
-      /* border: 3px solid rgb(77, 75, 77); */
-      box-shadow: -5px 4px 17px 0px rgb(66 65 65);
-  }
   
   .uni_logo{
       display: grid;
       justify-content: center;
   }
-  .one_image{
-      display: inline-block;
-      margin: 15px 82px;
-      padding: 5px;
-      background-color: rgb(243, 243, 255);
-      border-radius: 8px;
-      box-shadow: -5px 2px 20px 0px rgb(66 65 65);
-  }
-.two_image{
-    background-color: rgb(243, 243, 255);
-    display: inline-block;
-    margin: 15px 90px;
-    border-radius: 8px;
-    padding: 5px;
-    box-shadow: -5px 2px 20px 0px rgb(66 65 65);
-}
+  
 .headingTwo{
     font-size: 35px;
     color: blueviolet;
@@ -290,14 +430,7 @@ video{
     padding: 9px;
 }
 
-.aboout_main p {
-    line-height: 1.8rem;
-    text-align: justify;
-}
-
-.aboout_main {
-    padding: 12px;
-}
+/* Home Page footer */
 
 /* .footContainer{
     background-color: rgba(44, 44, 44, 0.823);
@@ -323,128 +456,91 @@ video{
     color: #fff;
 }
 
-.note{
-    height: 30px;
-    background-color: rgb(223, 118, 139);
-    border: 2px solid yellow;
-    margin: 5px;
-    padding: 3px;
-    text-align: center;
-    font-size: 15px;
- 
-}
-
-.card{
-    display: inline-block;
-    /* justify-content: center; */
-    width: 300px;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    margin: 12px 200px;
-    border-radius: 3px;
-}
-.dean{
-    width: 100%;
-    border-radius: 3px;
-}
-.card:hover{
-    box-shadow: 0 10px 18px 0 rgba(0,0,0,0.2);
-}
-.cardinfo{
-    margin: 2px 2px auto auto;
-    padding: 3px;
-    
-}
-.cardinfo2{
-    margin: 3px;
-}
-.rimgtext{
-    text-align: center;
-    color: blueviolet;
-    padding: 0 0 20px 0;
-}
-.Rimg{
-    display: grid;
-    justify-content: center;
-    padding: 0 0 20px 0;
-}
-.cimgtext{
-    text-align: center;
-    color: blueviolet;
-    padding: 20px 0 20px 0;
-}
-.Cimg{
-    display: grid;
-    justify-content: center;
-}
-
 .bar{
     margin: 10px 0 0 20px;
     padding: 25px 5px 10px 5px;
 }
-.Ranking{
-    display: grid;
-    justify-content: center;
-    padding: 20px;
-}
-.contact{
+
+/* Contact Page */
+
+.contact-container-primary{
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1.15rem;
+    overflow: hidden;
+    transform: translateX(-0.5%);
+}
+.contact-container-primary .contact-container{
+    background-color: #ccc;
+    width: 35rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.contact-container-primary .contact-container .contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: .4rem;
+    padding: .4rem;
+    gap: 4rem;
+}
+
+.contact-container-primary .contact-container .contact form{
     display: grid;
-    border-radius: 5px;
-  background-color: #c4c4c4;
-  padding: 20px;
-  width: 800px;
-  margin: 80px auto;
+    grid-template-columns: 11rem 10rem;
 }
-.ctext{
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    color: rgb(43, 212, 195);
-    /* padding: 20px; */
-    margin: -40px;
+
+.contact-container-primary .contact-container .contact label{
+    margin: .45rem;
 }
-.contactLabels{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-}
-.contact input[type=text]{
-    font-family: 'Open Sans', sans-serif;
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+
+.contact-container-primary .contact-container .contact input[type="text"], input[type="email"]{
+    background-color: #fff;
+    width: 20rem;
+    height: 2.1rem;
+    font-size: .95rem;
+    border: 2px solid gray;
+    padding: 0 0 0 .5rem;
+    margin: .45rem;
     box-sizing: border-box;
-    background-color: white;
-  }
-.contact input[type=email]{
-    font-family: 'Open Sans', sans-serif;
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    background-color: white;
+    border: none;
+    border-bottom: 2px solid rgb(111, 111, 111);
 }
-  .feedback {
-      height: 150px;
-      width: 450px;
-      min-width: 450px;
-      min-height: 150px;
-      max-width: 450px;
-      max-height: 150px;
-      margin: 20px 20px;
-     border-radius: 4px;
-     box-sizing: border-box;
-     font-family: 'Open Sans', sans-serif;
-     padding: 8px;
-  }
-  
-  .cbacktohome{
+
+.contact-container-primary .contact-container .contact textarea{
+    min-height: 5rem;
+    min-width: 20rem;
+    max-height: 20rem;
+    max-width: 20rem;
+    font-size: .95em;
+    margin: .45rem;
+}
+
+.contact-container-primary .contact-container .contact form .button-container{
+    position: relative;
+    margin: 2rem auto auto auto;
+    transform: translateX(180%);
+}
+
+.contact-container-primary .contact-container .contact form .button-container .centerbutton .submitButton{
+    width: 5.5rem;
+    height: 2.75rem;
+    border-radius: .55rem;
+    background-color: #fff;
+    border-color: blueviolet;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+    font-size: 1.1em;
+}
+
+.contact-container-primary .contact-container .contact form .button-container .centerbutton .submitButton:hover{
+    color: #fff;
+    background-color: blueviolet;
+}
+
+  /* .cbacktohome{
       font-size: 18px;
       text-align: left;
       margin: 5px 50px;
@@ -452,19 +548,35 @@ video{
   }
   .cbacktohome:hover{
       color: rgb(223, 52, 52);
-  }
-.cfooter ul li{
+  } */
+
+.contact-footer{
+    background-color: rgb(23, 23, 23);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(40%);
+}
+.contact-footer .cfooter ul li{
     list-style: none;
     display: inline-block;
     justify-content: center;
     margin: 2px 20px;
     /* font-size: 20px; */
 }
-.cfooter{
+.contact-footer .cfooter{
     /* padding: 10px; */
     text-align: center;
+    color: #fff;
 }
-.cunilogo{
+.contact-footer .cunilogo{
     display: grid;
     justify-content: center;
     align-items: center;

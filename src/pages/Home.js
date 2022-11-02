@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import UniVideo from './UniVideo.mp4'
 import UniVideo2 from './uniVideo2.mp4'
 import logo from './logo.jpg';
@@ -14,8 +14,7 @@ import { Navigation } from "./navigation";
 
 export function Home() {
 
-
-    return (
+return (
         <div className="Main_page">
             <div className="container">
                 <div className="uni_logo">
@@ -28,7 +27,8 @@ export function Home() {
             </div>
             <div className="hmain">
                 <div className="announce" id="announcement">
-                    <marquee direction="left" scrollamount="5">Announcement Announcement Announcement Announcement Announcement Announcement Announcement Announcement</marquee>
+                    <div>Announcement Announcement Announcement Announcement Announcement Announcement Announcement
+                    </div>
                 </div>
 
                 <div className="note">
@@ -40,26 +40,32 @@ export function Home() {
 
                 <Awards />
 
-                <div className="video">
-
+                <div className="video1">
+                    <h1>University Video</h1>
+                    <div className="videoDiv">
                     <video src={UniVideo} alt="university_logo" muted loop autoPlay />
+                    </div>
                 </div>
             </div>
 
             <div className="Rimg">
+                <div>
                 <h1 className="rimgtext">Research</h1>
+                </div>
+                <div>
                 <img src={Research} alt="research" />
+                </div>
             </div>
 
             <Cards />
 
 
-            <div>
-                <div className="one_image">
+            <div className="collegeImages">
+                <div className="clgimg">
                     <img src={Clgone} alt='college 1' height="230px" />
 
                 </div>
-                <div className="two_image">
+                <div className="clgimg">
                     <img src={Clgtwo} alt='college 2' height="230px" />
                 </div>
             </div>
@@ -73,7 +79,8 @@ export function Home() {
             <About />
             
 
-            <div className="video">
+            <div className="video2">
+            <h1>University Video</h1>
                 <video src={UniVideo2} alt="university_logo" muted loop autoPlay />
             </div>
 
@@ -95,4 +102,6 @@ export function Home() {
 
         </div>
     );
+
+
 }

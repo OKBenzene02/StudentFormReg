@@ -1,6 +1,6 @@
 import React from "react";
 import logo from './logo.jpg';
-import Arrow from './arrow.png'
+// import Arrow from './arrow.png'
 import { Link } from 'react-router-dom'
 
 

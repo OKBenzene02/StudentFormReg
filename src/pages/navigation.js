@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 export function Navigation()
 {
 return(
-    <nav className="navigation">
+    <div className="navigation">
                     <ul>
                         <li><Link to="/" className="navtags">Home</Link></li>
-                        <li><a href="#aboutpgs" className="navtags">About</a></li>
+                        <li><a href="/#aboutpgs" className="navtags">About</a></li>
                         <li><div className="dropdown"><span>Registration</span>
                             <div class="dropdown-content">
                                 <Link to='/main' className="dropdowntag">Ug Registration</Link>
@@ -17,9 +17,6 @@ return(
                             </div></div></li>
                         <li><Link to="/contactus" className="navtags">Contact</Link></li>
                     </ul>
-                    <div className="search">
-                        <input type="text" placeholder="Search" />
-                    </div>
-                </nav>
+                </div>
 )
 };

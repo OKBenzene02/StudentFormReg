@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { Header } from "./registration";
+import { Navigation } from "./pages/navigation";
+import logo from "./logo.jpg";
 
 export function Main() {
     
@@ -75,48 +76,49 @@ export function Main() {
     return (
     <form  onSubmit={SubmissionHandle} >
          
-        <Header />
-        
+         <div className="container">
+                <div className="uni_logo">
+
+                    <img src={logo} alt="uniLogo" height="80px" style={{ margin: 10 }} />
+                </div>
+                
+                <Navigation/>
+
+            </div>
+        <div className="registerPage-container">
         <div className="main">
+            <div className="main-container">
             <label for="fisrtname">
-                FIRST NAME: <input type="text" value={userinputs.firstname} placeholder="First Name" id="firstname" name="firstname" onChange={onUserInteract}/>
+                FIRST NAME <input type="text" value={userinputs.firstname} placeholder="First Name" id="firstname" name="firstname" onChange={onUserInteract}/>
             </label>
-            <hr />
             <label for="lastname">
-                LAST NAME: <input type="text" value={userinputs.lastname} placeholder="Last Name" id="lastname" name="lastname" onChange={onUserInteract}/>
+                LAST NAME <input type="text" value={userinputs.lastname} placeholder="Last Name" id="lastname" name="lastname" onChange={onUserInteract}/>
             </label>
-            <hr />
             <label for="fathername">
-                FATHER NAME: <input type="text" value={userinputs.fathername}  placeholder="Father Name"  id="fathername" name="fathername" onChange={onUserInteract}/>
+                FATHER NAME <input type="text" value={userinputs.fathername}  placeholder="Father Name"  id="fathername" name="fathername" onChange={onUserInteract}/>
             </label>
-            <hr />
             <label for="dob">
-                DATE OF BIRTH: <input type="date" id="dob" name="dob" value={userinputs.dob} onChange={onUserInteract}/>
+                DATE OF BIRTH <input type="date" id="dob" name="dob" value={userinputs.dob} onChange={onUserInteract}/>
             </label>
-            <hr />
             <label for="phnnumber">
-                PHONE NUMBER: <input type="text" value={userinputs.phnnumber} placeholder="Phone Number" id="phnnumber" name="phnnumber" onChange={onUserInteract}/>
+                PHONE NUMBER <input type="text" value={userinputs.phnnumber} placeholder="Phone Number" id="phnnumber" name="phnnumber" onChange={onUserInteract}/>
             </label>
-            <hr />
             <label for="email">
-                EMAIL-ID: <input type="email" value={userinputs.email} placeholder="someone@example.com" id="email" name="email" onChange={onUserInteract}/>
+                EMAIL-ID <input type="email" value={userinputs.email} placeholder="someone@example.com" id="email" name="email" onChange={onUserInteract}/>
             </label>
-            <hr />
             <label for="address">
-                ADDRESS: <input type="text" value={userinputs.address} placeholder="Address" id="address" name="address" onChange={onUserInteract}/>
+                ADDRESS <input type="text" value={userinputs.address} placeholder="Address" id="address" name="address" onChange={onUserInteract}/>
             </label>
-            <hr />
             <label for="highestschooling">
-                HIGHEST SCHOOLING: </label>
+                HIGHEST SCHOOLING </label>
             <select name="schooling" id="highestschooling" name="highestschooling" value={userinputs.highestschooling} onChange={onUserInteract}>
                 <option value="">---Schooling---</option>
                 <option value="10th">10th</option>
                 <option value="11th">11th</option>
                 <option value="12th">12th</option>
             </select>
-            <hr />
             <label for="degreeprogram">
-                DEGREE PROGRAM:
+                DEGREE PROGRAM
             </label>
             <select name="programs" id="degreeprogram" name="degreeprogram" value={userinputs.degreeprogram} onChange={onUserInteract}>
                 <option value="">---B.tech/ B.Sc./ BBA---</option>
@@ -129,10 +131,12 @@ export function Main() {
                 <option value="Biotechnology">Biotechnology</option>
                 <option value="Computer Applications">Computer Applications</option>
             </select>
-            <hr />
+            </div></div>
         </div>
-        <div className="centerbutton">
+        <div className="registerButton-main">
+        <div className="registerButton">
             <button className="register" type="submit">Register</button>
+        </div>
         </div>
     </form>
     );
